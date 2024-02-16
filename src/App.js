@@ -16,12 +16,12 @@ function App() {
   return (
     <>
       <Header />
+      {/*question : 10  */}
       <Routes>
         <Route path="/details-livre" element={<DetailsLivre Livres={Livres} />}/>
       </Routes>      
       <br />
       <div>
-       {/*question : 10  */}
         <select onChange={(e) => setType(e.target.value)}>
           {Livres &&
             Livres.map((l, index) => (
